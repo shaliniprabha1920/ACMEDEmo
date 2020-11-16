@@ -11,13 +11,12 @@ import pack1.HomePage;
 import pack1.Login;
 import pack1.Register;
 
-public class ResgisterTest extends BaseTest{
-	
+public class TestRun extends BaseTest{
 	private Register register;
 	private Login login;
 	private HomePage homepage;
 
-	public ResgisterTest() {
+	public TestRun() {
 		super();
 	}
 
@@ -25,17 +24,17 @@ public class ResgisterTest extends BaseTest{
 
 	public void setUp() {
 		intialization();
-		//test = extent.createTest("setUpp", "PASSED test case");
+		test = extent.createTest("setUpp", "PASSED test case");
 		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		register = new Register();
-		//login = new Login();
-		//homepage = new HomePage();
+		login = new Login();
+		homepage = new HomePage();
 		System.out.println(driver);
 	}
 
 	@Test
 
-	public void registerPage() throws InterruptedException {
+	public void testrun() throws InterruptedException {
 		register.clickRegister();
 		login.clickLogin();
 		homepage.clickHomeIcon();

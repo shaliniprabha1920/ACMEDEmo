@@ -6,8 +6,10 @@
       <class name="packtest1.ResgisterTest">
         <methods>
           <include name="tearDown"/>
+          <include name="getResult"/>
           <include name="setUp"/>
           <include name="registerPage"/>
+          <include name="setUpp"/>
         </methods>
       </class> <!-- packtest1.ResgisterTest -->
     </classes>

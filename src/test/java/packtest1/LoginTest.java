@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest {
 	}
 
 	@Test
-	public void loginPage() throws InterruptedException {
+	public void loginPage() throws InterruptedException  {
 		login.clickLogin();
 	}
 
